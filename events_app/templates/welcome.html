@@ -1,8 +1,12 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block title %}
 <title>Bienvenue</title>
 {% endblock %}
 
 {% block content %}
-<h1>Bienvenue sur Eiliyona!</h1>
+<br />
+<div class="container-fluid">
+  <img src="{% static 'images/under_construction.jpg' %}" class="img-fluid" alt="Site under construction" width="80%" />
+</div>
 {% endblock %}
