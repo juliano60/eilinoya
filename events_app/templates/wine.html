@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+<title>Nos Vins</title>
+{% endblock %}
+
+{% block content %}
+<section>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-10 offset-lg-1 py-4 justify-content-center">
+        <h1 class="display-1 text-primary">Nos Vins</h1>
+        <h4 class="lead text-secondary">Nous vous offrons des vins pour toute occasion. Nous avons user de notre expertise pour selectioner les vins.
+        N'hésitez pas à vous offrir un Merlot corsé ou un Cabernet sec.</h4>
+      </div>
+    </div>
+    <div class="row justify-content-center bg-light">
+      {% for wine in all_wine %}
+      <div class="col-lg-4 col-sm-10 mx-auto p-4 text-center">
+        <div class="card" style="width: 20rem;" >
+          <img src="{% static wine.image_url %}" class="card-img-top" alt="{{ wine.name }}">
+          <div class="card-body">
+            <h5 class="card-title">{{ wine.name }}</h5>
+            <p class="card-text text-danger fw-bold">{{ wine.price }}F</p>
+            <a href="#" class="btn btn-primary">Acheter</a>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+</section>
+{% endblock %}

@@ -1,10 +1,19 @@
 from django.shortcuts import render
+from events_app.models import Wine
 
 
 # Create your views here.
-def welcome(request):
+def display_wine(request):
+    all_wine = Wine.objects.all()
+
+    return render(request,
+                  'wine.html',
+                  {'all_wine': all_wine})
+
+
+def index(request):
     context = {}
 
     return render(request,
-                  'welcome.html',
+                  'index.html',
                   context)
