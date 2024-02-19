@@ -10,6 +10,12 @@ def display_wine(request):
                   'wine.html',
                   {'all_wine': all_wine})
 
+def display_contact(request):
+    context = {}
+    return render(request,
+                  'contact.html',
+                  context)
+
 
 def index(request):
     context = {}

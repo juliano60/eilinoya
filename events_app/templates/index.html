@@ -8,38 +8,23 @@
 <!-- intro -->
 <section>
   <div class="container-fluid">
-    <div class="row align-items-center justify-content-center" style="height: 100vh">
+    <div class="row align-items-center justify-content-center bg-light" style="height: 100vh">
       <div class="col-lg-10 text-center">
-        <h1 class="display-2 text-capitalize">bienvenue à <span class="text-warning">Eilinoya Events</span></h1>
+        <h1 class="display-2 text-capitalize">bienvenue à <span style="color: #5f0856;" class="fw-semibold">Eilinoya Events</span></h1>
         <h3 class="lead">L'endroit pour le vin et l'événementiel</h3>
-        <a href="{% url 'vins' %}" class="btn btn-primary btn-lg px-4">Contacts</a>
-        <a href="{% url 'index' %}" class="btn btn-warning btn-lg px-4">Location</a>
+        <a href="{% url 'contact' %}" class="btn btn-primary btn-lg px-4">Contacts</a>
       </div>
     </div>
   </div>  
 </section>
 <!-- wine section -->
-<section class="bg-dark">
+<section class="bg-dark mb-3">
   <div class="container-fluid">
-    <!-- end of title -->
     <div class="row">
-      <div class="col-lg-10 col-sm-10" style="max-width: 800px;">
-        <div class="card sm-10 bg-light">
-          <div class="row g-0">
-            <div class="col-sm-4">
-              <a href="{% url 'vins' %}"><img src="{% static 'images/wine_homepage.jpg' %}" class="img-fluid rounded-start" alt="wine_homepage"></a>
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title display-2 text-warning"><a href="{% url 'vins' %}" class="link-warning text-decoration-none">Vins</a></h5>
-                <p class="card-text lead text-secondary">Découvrez notre selection de vins.</p>
-                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="col p-0">
+          <img src="{% static 'images/wine_homepage.jpg' %}" class="img-fluid" alt="wine_homepage">
       </div>
-    </div>
+    </div>  
   </div>
 </section>
 <!-- end of wine section -->

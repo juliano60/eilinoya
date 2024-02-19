@@ -17,7 +17,7 @@
 <!-- navigation bar -->
 <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="{% url 'index' %}"><img src="{% static 'images/logo.png' %}" alt="Eilinoya-events" width="75"/></a>
+    <a class="navbar-brand logo" href="{% url 'index' %}"><img src="{% static 'images/logo.png' %}" alt="Eilinoya-events" width="75"/></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -33,7 +33,7 @@
           <a class="nav-link link-light link-opacity-50-hover" href="#">Événementiel</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link link-light link-opacity-50-hover" href="#">Contacts</a>
+          <a class="nav-link link-light link-opacity-50-hover" href="{% url 'contact' %}">Contacts</a>
         </li>
         <li class="nav-item">
           <a class="nav-link link-light link-opacity-50-hover" href="#">À Propos</a>
@@ -59,10 +59,10 @@
   <!-- social media -->
   <div class="row justify-content-center">
     <div class="col-sm-10 mx:auto mt-2 text-center">
-      <a href="#"><i class="fa-brands fa-facebook text-dark fa-3x mx-3"></i></a>
-      <a href="#"><i class="fa-brands fa-youtube text-dark fa-3x mx-3"></i></a>
-      <a href="#"><i class="fa-brands fa-instagram text-dark fa-3x mx-3"></i></a>
-      <a href="#"><i class="fa-brands fa-x-twitter text-dark fa-3x mx-3"></i></a>
+      <a href="https://www.facebook.com/eilinoya.ci/"><i class="fa-brands fa-facebook text-primary fa-2x mx-3"></i></a>
+      <a href="#"><i class="fa-brands fa-youtube text-danger fa-2x mx-3"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram text-warning fa-2x mx-3"></i></a>
+      <a href="#"><i class="fa-brands fa-x-twitter text-dark fa-2x mx-3"></i></a>
     </div>
   </div>
 </footer>
