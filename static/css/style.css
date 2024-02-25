@@ -1,3 +1,22 @@
+body {
+    font-family: 'Montserrat', 'sans-serif';
+}
+
+/* navigation */
+header.index-page {
+    height: 200vh;
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.4)),
+    url("/static/images/wine_homepage.jpg") no-repeat center center /cover;
+}
+
+.navbar {
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.7));
+}
+
+.logo-text {
+    font-family: "Qwigley", cursive;
+}
+
 .google-map {
     padding-bottom: 50%;
     position: relative;
@@ -20,3 +39,36 @@
 .logo:hover {
     transform: translateY(-1px);
 }
+
+/* banner */
+.banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+
+.banner-heading {
+    animation-name: anim;
+    animation-duration: 3s;
+}
+
+.banner-par {
+    animation-name: anim;
+    animation-duration: 3s;
+    animation-delay: .5s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes anim {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 {% load static %}
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- bootstrap -->
@@ -30,7 +30,7 @@
 </head>
 <body>
 <!-- navigation bar -->
-<header>
+<header class="index-page">
   <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
     <div class="container-fluid">
       <a class="navbar-brand logo" href="{% url 'index' %}"><img src="{% static 'images/logo.png' %}" alt="Eilinoya-events" width="75" class="d-inline-block align-bottom"/><span class="display-5 fw-bold logo-text ms-3" style="position:relative; top: -2px;">Eilinoya Events </span></a>
@@ -58,6 +58,13 @@
       </div>
     </div>
   </nav>
+
+  <!-- banner -->
+  <div class="text-light text-md-end text-center banner">
+    <h1 class="display-4 banner-heading">Welcome to <span class="text-uppercase fw-bold" style="color: #5f0856">eilinoya</span><span class="display-3 text-capitalize" style="color: #5f0856"> events</span></h1>
+    <p class="lead banner-par">L'endroit pour le vin et l'événementiel</p>
+    <a href="{% url 'contact' %}" class="btn btn-primary btn-lg px-4 banner-par">Contacts</a>
+  </div>
 </header>
 <!-- end of navigation bar -->
 
