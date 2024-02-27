@@ -18,8 +18,8 @@ def display_contact(request):
 
 
 def index(request):
-    context = {}
+    all_wine = Wine.objects.all()
 
     return render(request,
                   'index.html',
-                  context)
+                  {'all_wine': all_wine})

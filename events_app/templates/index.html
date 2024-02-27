@@ -6,12 +6,87 @@
 
 {% block content %}
 <!-- wine section -->
-<section class="bg-dark mb-3">
+<section class="p-5 bg-white">
   <div class="container-fluid">
     <div class="row">
-      <div class="col p-0">
-          <!-- <img src="{% static 'images/wine_homepage.jpg' %}" class="img-fluid" alt="wine_homepage"> -->
+      <!-- title -->
+      <div class="row text-secondary text-center">
+        <div class="col m-4">
+            <h1 class="display-4 mb-4">Gallerie Photos</h1>
+            <div class="underline-dark mb-4"></div>
+            <p class="lead">Voir example d'événements précédents.</p>
+        </div>
       </div>
+      <div class="row">
+        <div class="col-sm-6 mx-auto">
+          <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner carousel-shadow">
+              <div class="carousel-item active">
+                <img src="{% static 'images/eili_front_1.jpg' %}" class="d-block w-100" alt="eilinoya1">
+              </div>
+              <div class="carousel-item">
+                <img src="{% static 'images/eili_front_2.jpg' %}" class="d-block w-100" alt="eilinoya2">
+              </div>
+              <div class="carousel-item">
+                <img src="{% static 'images/eili_front_3.jpg' %}" class="d-block w-100" alt="eilinoya3">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+
+<section class="p-5 bg-secondary">
+  <div class="container-fluid">
+    <div class="row">
+      <!-- title -->
+      <div class="row text-white text-center">
+        <div class="col m-4">
+            <h1 class="display-4 mb-4">Collection Vins</h1>
+            <div class="underline mb-4"></div>
+            <p class="lead">Découvrez notre collection vins.</p>
+        </div>
+      </div>
+      <div class="row my-3">
+        <div class="col-sm-6 col-lg-4 text-center border-0 ">
+          <div class="card card-shadow card-item">
+            <a href="{% url 'vins' %}"><img src="{% static 'images/chateau_homepage.jpg' %}" class="card-img" alt="Wine" ></a>
+            <div class="card-img-overlay">
+              <h5 class="card-title collection-heading text-white text-uppercase fw-bold">Chateau</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 text-center border-0 mt-3">
+          <div class="card card-shadow card-item">
+            <a href="{% url 'vins' %}"><img src="{% static 'images/merlot_homepage.jpg' %}" class="card-img" alt="Wine" ></a>
+            <div class="card-img-overlay">
+              <h5 class="card-title collection-heading text-white text-uppercase fw-bold">Merlot</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 text-center border-0 mt-5">
+          <div class="card card-shadow card-item">
+            <a href="{% url 'vins' %}"><img src="{% static 'images/cabernet_homepage.jpg' %}" class="card-img" alt="Wine" ></a>
+            <div class="card-img-overlay">
+              <h5 class="card-title collection-heading text-white text-uppercase fw-bold">Carbernet</h5>
+            </div>
+          </div>
+        </div>
+    </div>
     </div>  
   </div>
 </section>
