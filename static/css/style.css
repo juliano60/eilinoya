@@ -74,11 +74,18 @@ header.index-page {
 
 .card-item:hover {
     transform: translateY(-10px);
+    cursor: pointer;
 }
 
 
 .carousel-shadow {
-    box-shadow: 5px 8px 20px #9e9d9d;
+    box-shadow: 5px 8px 20px #bebebe;
+    transition: all .3s;
+}
+
+.carousel-shadow:hover {
+    cursor: pointer;
+    box-shadow: 5px 8px 30px #706f6f;
 }
 
 /* contact */
