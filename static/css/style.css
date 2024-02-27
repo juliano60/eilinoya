@@ -3,20 +3,35 @@ body {
 }
 
 /* navigation */
-header.index-page {
-    height: 200vh;
-    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.4)),
-    url("/static/images/wine_homepage.jpg") no-repeat center center /cover;
+header {
+    height: 23vh;
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.6));
 }
 
-.navbar {
-    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.7));
+header.index-page {
+    height: 200vh;
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.6)),
+    url("/static/images/home_palm_tree.jpg") no-repeat center center /cover;
+}
+
+.nav-menu {
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.8));
+    padding: 30px;
+}
+
+.custom-navbar {
+    padding: 5px 30px;
+}
+
+.nav-item {
+    letter-spacing: 1.5px;
 }
 
 .logo-text {
     font-family: "Qwigley", cursive;
 }
 
+/* contact */
 .google-map {
     padding-bottom: 50%;
     position: relative;

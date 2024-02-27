@@ -31,9 +31,9 @@
 <body>
 <!-- navigation bar -->
 <header class="index-page">
-  <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
-    <div class="container-fluid">
-      <a class="navbar-brand logo" href="{% url 'index' %}"><img src="{% static 'images/logo.png' %}" alt="Eilinoya-events" width="75" class="d-inline-block align-bottom"/><span class="display-5 fw-bold logo-text ms-3" style="position:relative; top: -2px;">Eilinoya Events </span></a>
+  <nav class="navbar navbar-expand-lg fixed-top nav-menu" data-bs-theme="dark">
+    
+      <a class="navbar-brand logo" href="{% url 'index' %}"><img src="{% static 'images/logo.png' %}" alt="Eilinoya-events" width="75" class="d-inline-block align-bottom"/><span class="display-5 logo-text ms-3" style="position:relative; top: -2px;">Eilinoya Events </span></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -51,17 +51,14 @@
           <li class="nav-item">
             <a class="nav-link link-light link-opacity-50-hover" href="{% url 'contact' %}">Contacts</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link link-light link-opacity-50-hover" href="#">À Propos</a>
-          </li>
         </ul>
       </div>
-    </div>
+    
   </nav>
 
   <!-- banner -->
   <div class="text-light text-md-end text-center banner">
-    <h1 class="display-4 banner-heading">Welcome to <span class="text-uppercase fw-bold" style="color: #5f0856">eilinoya</span><span class="display-3 text-capitalize" style="color: #5f0856"> events</span></h1>
+    <h1 class="display-4 banner-heading">Bienvenue a <span class="text-uppercase fw-semibold" style="color: #5f0856">eilinoya</span><span class="display-3 text-capitalize" style="color: #5f0856"> events</span></h1>
     <p class="lead banner-par">L'endroit pour le vin et l'événementiel</p>
     <a href="{% url 'contact' %}" class="btn btn-primary btn-lg px-4 banner-par">Contacts</a>
   </div>
@@ -92,11 +89,13 @@
 </footer>
 <!-- end of footer section -->
 
-<!-- custom js -->
-<script src="{% static 'js/script.js' %}"></script>
+
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 <!-- bootstrap -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<!-- custom js -->
+<script src="{% static 'js/script.js' %}"></script>
+
 </body>
 </html>
