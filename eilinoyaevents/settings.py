@@ -10,8 +10,11 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
+from decouple import config
 from pathlib import Path
 import os
+import logging
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -25,7 +28,7 @@ SECRET_KEY = 'django-insecure-p#r79fcis=aah#0x@wsfxaoc=dtkxb=g66=tecqnxg)o_!&2-6
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['www.eilinoyaevents.com']
+ALLOWED_HOSTS = ['www.eilinoyaevents.com', '*']
 
 # Application definition
 
@@ -118,3 +121,22 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Email server configuration
+#EMAIL_HOST = 'smtp.gmail.com'
+#EMAIL_HOST_USER = 'konan.jules7@gmail.com'
+#EMAIL_HOST_PASSWORD = 'giso gcjv aauf nagv'
+#EMAIL_PORT = 587
+#EMAIL_USE_TLS = True
+
+EMAIL_BACKEND = 'django_ses.SESBackend'
+AWS_ACCESS_KEY_ID = config('AWS_ACCESS_KEY_ID')
+AWS_SECRET_ACCESS_KEY = config('AWS_SECRET_ACCESS_KEY')
+
+DEBUG = True
+if DEBUG:
+    # will output to your console
+    logging.basicConfig(
+        level = logging.DEBUG,
+        format = '%(asctime)s %(levelname)s %(message)s',
+    )

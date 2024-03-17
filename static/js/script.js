@@ -1,6 +1,6 @@
 $(window).scroll(function() {
     let position = $(this).scrollTop();
-    console.log(position);
+    //console.log(position);
     if (position >= 200) {
         $('.nav-menu').addClass('custom-navbar');
     }
