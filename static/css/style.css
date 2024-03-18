@@ -31,7 +31,7 @@ header.index-page {
     font-family: "Qwigley", cursive;
 }
 
-/* title */
+/* title index */
 .underline-dark {
     width: 150px;
     border: 3px solid #888;
@@ -43,6 +43,20 @@ header.index-page {
     border: 3px solid #eee;
     margin: auto;
 }
+
+/* title wine */
+.underline-w-dark {
+    width: 150px;
+    border: 3px solid #ccc;
+    margin: auto;
+}
+
+.underline-w-dark-slim {
+    width: 150px;
+    border: 1px solid #ccc;
+    margin: auto;
+}
+
 
 /* collection */
 .collection-heading {
@@ -63,6 +77,7 @@ header.index-page {
     opacity: 1;
 }
 
+/* index cards */
 .card-shadow {
     box-shadow: 5px 8px 20px #444;
     background: linear-gradient(rgba(255, 255, 255, 0.3),rgba(245, 201, 201, 0.6));
@@ -74,7 +89,6 @@ header.index-page {
 
 .card-item:hover {
     transform: translateY(-10px);
-    cursor: pointer;
 }
 
 

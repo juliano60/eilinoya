@@ -57,28 +57,29 @@
             <p class="lead">Découvrez notre collection vins.</p>
         </div>
       </div>
+      <!-- end of title -->
       <div class="row my-3">
-        <div class="col-sm-6 col-lg-4 text-center border-0 ">
+        <div class="col-sm-10 col-lg-4 mx-auto text-center border-0 ">
           <div class="card card-shadow card-item">
-            <a href="{% url 'vins' %}"><img src="{% static 'images/chateau_homepage.jpg' %}" class="card-img" alt="Wine" ></a>
+            <img src="{% static 'images/chateau_homepage.jpg' %}" class="card-img" alt="Wine" >
             <div class="card-img-overlay">
-              <h5 class="card-title collection-heading text-white text-uppercase fw-bold">Château</h5>
+              <a href="{% url 'vins' %}"><h5 class="card-title collection-heading text-white text-uppercase fw-bold">Château</h5></a>
             </div>
           </div>
         </div>
-        <div class="col-sm-6 col-lg-4 text-center border-0 mt-3">
+        <div class="col-sm-10 col-lg-4 mx-auto text-center border-0 mt-3">
           <div class="card card-shadow card-item">
-            <a href="{% url 'vins' %}"><img src="{% static 'images/merlot_homepage.jpg' %}" class="card-img" alt="Wine" ></a>
+            <img src="{% static 'images/merlot_homepage.jpg' %}" class="card-img" alt="Wine" >
             <div class="card-img-overlay">
-              <h5 class="card-title collection-heading text-white text-uppercase fw-bold">Merlot</h5>
+              <a href="{% url 'vins' %}"><h5 class="card-title collection-heading text-white text-uppercase fw-bold">Merlot</h5></a>
             </div>
           </div>
         </div>
-        <div class="col-sm-6 col-lg-4 text-center border-0 mt-5">
+        <div class="col-sm-10 col-lg-4 mx-auto text-center border-0 mt-5">
           <div class="card card-shadow card-item">
-            <a href="{% url 'vins' %}"><img src="{% static 'images/cabernet_homepage.jpg' %}" class="card-img" alt="Wine" ></a>
+            <img src="{% static 'images/cabernet_homepage.jpg' %}" class="card-img" alt="Wine" >
             <div class="card-img-overlay">
-              <h5 class="card-title collection-heading text-white text-uppercase fw-bold">Bordeaux</h5>
+              <a href="{% url 'vins' %}"><h5 class="card-title collection-heading text-white text-uppercase fw-bold">Bordeaux</h5></a>
             </div>
           </div>
         </div>

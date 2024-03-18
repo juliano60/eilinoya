@@ -6,23 +6,44 @@
 
 {% block content %}
 <section>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-lg-10 offset-lg-1 py-4 justify-content-center">
-        <h1 class="display-1 text-primary">Nos Vins</h1>
-        <h4 class="lead text-secondary">Nous vous offrons des vins pour toute occasion. Nous avons user de notre expertise pour selectioner les vins.
-        N'hésitez pas à vous offrir un Merlot corsé ou un Cabernet sec.</h4>
+  <div class="container-fluid bg-light">
+    <!-- title -->
+    <div class="row text-center">
+      <div class="col m-4">
+          <h1 class="display-4 mb-4 text-secondary">Nos Vins</h1>
+          <div class="underline-w-dark mb-4"></div>
+          <p class="lead">Nous vous offrons des vins pour toute occasion. Nous avons user de notre expertise pour selectioner nos vins.
+            N'hésitez pas à vous offrir un Merlot corsé ou un Cabernet sec.</p>
       </div>
     </div>
-    <div class="row justify-content-center bg-light">
+    <!-- end of title -->
+
+    <div class="row justify-content-center text-center bg-light">
       {% for wine in all_wine %}
-      <div class="col-lg-4 col-sm-10 mx-auto p-4 text-center">
-        <div class="card" style="width: 20rem;" >
-          <img src="{% static wine.image_url %}" class="card-img-top" alt="{{ wine.name }}">
-          <div class="card-body">
-            <h5 class="card-title">{{ wine.name }}</h5>
-            <p class="card-text text-danger fw-bold">{{ wine.price }}F</p>
-            <a href="#" class="btn btn-primary">Acheter</a>
+      <div class="col-sm-10 mx-auto p-4">
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="{% static wine.image_url %}" class="img-fluid rounded-start" alt="{{ wine.name }}">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title text-primary">{{ wine.name }} <span class="badge text-bg-primary">{{wine.price}}CFA</span></h5>
+                {% if wine.slogan.strip %}
+                <p class="card-text lead text-small fst-italic">"{{wine.slogan}}"</p>
+                {% endif %}
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                <div class="underline-w-dark-slim my-4"></div>
+                <p class="card-text text-secondary">Degré d'alcool: {{wine.alcohol_pct}}%</p>
+                <p class="card-text text-secondary">Domaine: {{wine.domain}}</p>
+                <p class="card-text text-secondary text-capitalize">Cépages: {{wine.cepage}}</p>
+                <p class="card-text text-secondary">Région: {{wine.region}}</p>
+                <div class="underline-w-dark-slim my-4"></div>
+                <div class="card-text text-secondary mt-4">
+                  <a class= "btn btn-outline-warning" href="tel:0554558843">Commander</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

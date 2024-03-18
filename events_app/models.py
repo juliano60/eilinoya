@@ -30,6 +30,7 @@ class Wine(models.Model):
     slogan = models.CharField(max_length=200, blank=True, default='')
     image_url = models.CharField(max_length=100)
     grape_variety = models.CharField(max_length=200)
+    cepage = models.CharField(max_length=200)
 
     def __str__(self):
         return f'{self.name} | {self.type} | {self.year}'
