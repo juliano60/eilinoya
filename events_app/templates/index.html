@@ -1,51 +1,11 @@
 {% extends 'base_2.html' %}
 {% load static %}
 {% block title %}
-<title>Bienvenue à Eilinoya Events</title>
+<title>Bienvenue à Eilinoya</title>
 {% endblock %}
 
 {% block content %}
 <!-- wine section -->
-<section class="p-5 bg-white">
-  <div class="container-fluid">
-    <div class="row">
-      <!-- title -->
-      <div class="row text-secondary text-center">
-        <div class="col m-4">
-            <h1 class="display-4 mb-4">Galerie Photos</h1>
-            <div class="underline-dark mb-4"></div>
-            <p class="lead">Voir example d'événements précédents.</p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-6 mx-auto">
-        <div id="carouselExampleFade" class="carousel slide carousel-fade">
-          <div class="carousel-inner carousel-shadow">
-            <div class="carousel-item active">
-              <a href="#"><img src="{% static 'images/eili_front_1.jpg' %}" class="d-block w-100" alt="eilinoya1"></a>
-            </div>
-            <div class="carousel-item">
-              <a href="#"><img src="{% static 'images/eili_front_2.jpg' %}" class="d-block w-100" alt="eilinoya2"></a>
-            </div>
-            <div class="carousel-item">
-              <a href="#"><img src="{% static 'images/eili_front_3.jpg' %}" class="d-block w-100" alt="eilinoya3"></a>
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <section class="p-5 bg-secondary">
   <div class="container-fluid">
     <div class="row">
@@ -54,7 +14,7 @@
         <div class="col m-4">
             <h1 class="display-4 mb-4">Collection Vins</h1>
             <div class="underline mb-4"></div>
-            <p class="lead">Découvrez notre collection vins.</p>
+            <p class="lead">Découvrez notre collection de vins.</p>
         </div>
       </div>
       <!-- end of title -->

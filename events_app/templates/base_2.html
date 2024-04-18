@@ -33,20 +33,17 @@
 <header class="index-page">
   <nav class="navbar navbar-expand-lg fixed-top nav-menu" data-bs-theme="dark">
     
-      <a class="navbar-brand logo" href="{% url 'index' %}"><img src="{% static 'images/logo.png' %}" alt="Eilinoya-events" width="75" class="d-inline-block align-bottom"/><span class="display-5 logo-text ms-3" style="position:relative; top: -2px;">Eilinoya</span></a>
+      <a class="navbar-brand logo" href="{% url 'index' %}"><img src="{% static 'images/logo.png' %}" alt="Eilinoya" width="75" class="d-inline-block align-bottom"/><span class="display-5 logo-text ms-3" style="position:relative; top: -2px;">Eilinoya</span></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse text-uppercase fw-semibold justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link link-light link-opacity-50-hover" aria-current="page" href="{% url 'index' %}">Home</a>
+            <a class="nav-link link-light link-opacity-50-hover" aria-current="page" href="{% url 'index' %}">Accueil</a>
           </li>
           <li class="nav-item">
             <a class="nav-link link-light link-opacity-50-hover" href="{% url 'vins' %}">Vins</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link link-light link-opacity-50-hover" href="#">Événementiel</a>
           </li>
           <li class="nav-item">
             <a class="nav-link link-light link-opacity-50-hover" href="{% url 'contact' %}">Contacts</a>
@@ -59,7 +56,7 @@
   <!-- banner -->
   <div class="text-light text-md-end text-center banner">
     <h1 class="display-4 banner-heading">Bienvenue à <span class="text-uppercase fw-semibold" style="color: #5f0856">eilinoya</span></h1>
-    <p class="lead banner-par">L'endroit pour le vin et l'événementiel</p>
+    <p class="lead banner-par">L'endroit pour le vin et le champagne</p>
     <a href="{% url 'contact' %}" class="btn btn-primary btn-lg px-4 banner-par">Contacts</a>
   </div>
 </header>
